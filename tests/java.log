@@ -1,0 +1,28 @@
+ok   no update -> not_newer
+ok   check reads version.json
+ok   no stored copy -> bundled
+ok   newer build downloaded and saved
+ok   launch uses stored copy when build > bundled
+ok   launch ignores stored copy when build <= bundled
+ok   no temp files left behind
+ok   hash mismatch rejected
+ok   good copy (build 2) untouched after failed download
+ok   offline -> offline
+ok   offline download -> offline, stored copy kept: true
+ok   stalled server -> offline within the timeout (801 ms)
+ok   cancel mid-download -> cancelled at 116384 of 300029
+ok   cancel leaves nothing partial and keeps build 2
+ok   progress reports total size
+ok   build 3 installed after good retry
+ok   cleanup removes superseded copy
+ok   corrupt stored file -> bundled
+ok   missing stored file -> bundled
+ok   corrupt pointer -> bundled
+ok   cleanup tidies dead copy
+ok   missing pointer -> bundled
+ok   bad manifest rejected: nonsense
+ok   bad manifest rejected: {"version":"1","build":2,"file
+ok   bad manifest rejected: {"version":"1","build":2,"file
+ok   bad manifest rejected: {"version":"1","build":"x","fi
+ok   after failed build 5, build 4 still active
+checks 27 failures 0
