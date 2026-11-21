@@ -6,3 +6,5 @@ app/android/local.properties
 tests/.classes/
 *.keystore
 *.jks
+out/
+*.log
